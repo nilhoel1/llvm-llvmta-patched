@@ -1,0 +1,11 @@
+kind: pipeline
+type: docker
+name: llvmta-build
+
+steps:
+- name: Build
+  image: ls12-nvm-oma1:5000/llvmta-build
+  commands:
+  - mkdir /llvm/tools/llvmta
+  - cd ..
+  - ls -la 
